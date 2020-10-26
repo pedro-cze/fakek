@@ -31,6 +31,7 @@ class FakeContext(private val faker: Faker = Faker.instance()) {
     private val fakerBook by lazy { faker.book() }
     private val fakerBoolean by lazy { faker.bool() }
     private val fakerColor by lazy { faker.color() }
+    private val fakerDisease by lazy { faker.medical() }
     private val fakerInternet by lazy { faker.internet() }
     private val fakerName by lazy { faker.name() }
 
@@ -68,6 +69,11 @@ class FakeContext(private val faker: Faker = Faker.instance()) {
      * Provides a [FakeCreditCard].
      */
     val fakeCreditCard by lazy { FakeCreditCard.create() }
+
+    /**
+     * Provides a [FakeDisease].
+     */
+    val fakeDisease by lazy { FakeDisease(fakerDisease) }
 
     /**
      * Provides a [FakeEmailAddress] making use of [fakeName] to help generate parts of the email address.
