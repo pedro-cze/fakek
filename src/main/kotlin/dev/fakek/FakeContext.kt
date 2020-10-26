@@ -109,7 +109,7 @@ class FakeContext(private val faker: Faker = Faker.instance()) {
      * Provides a [FakeCreditCard].
      */
     val fakeCreditCard by lazy { FakeCreditCard.create() }
- 
+
     /**
      * Provides a [fakeCrypto].
      */
@@ -119,7 +119,7 @@ class FakeContext(private val faker: Faker = Faker.instance()) {
      * Provides a [FakeDisease].
      */
     val fakeDisease by lazy { FakeDisease(fakerDisease) }
-  
+
     /**
      * Provides a [FakeEmailAddress] making use of [fakeName] to help generate parts of the email address.
      */
