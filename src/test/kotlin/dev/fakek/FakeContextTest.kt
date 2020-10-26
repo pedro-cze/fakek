@@ -123,6 +123,7 @@ internal class FakeContextTest {
         expectThat(fakeAncient).hasSize(1)
     }
 
+    @Test
     fun `given a FakeContext when fakeArtist is accessed multiple times it should return the same value multiple times`() {
         val fakeArtist = createDistinctList { subject.fakeArtist }
 
