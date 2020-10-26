@@ -1,7 +1,7 @@
 package dev.fakek.fakes
 
 /**
- * Fake Disease with single param - disease name
+ * Fake Disease with single param - disease name.
  * @param diseaseName: String.
  */
 data class FakeDisease(
