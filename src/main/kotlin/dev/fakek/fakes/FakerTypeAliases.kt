@@ -16,6 +16,7 @@ internal typealias FakerCompany = Company
 internal typealias FakerCrypto = Crypto
 internal typealias FakerDisease = Medical
 internal typealias FakerDog = Dog
+internal typealias FakerEducator = Educator
 internal typealias FakerInternet = Internet
 internal typealias FakerJob = Job
 internal typealias FakerName = Name
