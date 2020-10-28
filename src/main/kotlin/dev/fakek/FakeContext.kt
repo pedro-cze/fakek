@@ -125,7 +125,7 @@ class FakeContext(private val faker: Faker = Faker.instance()) {
      * Provides a [FakeEducator].
      */
     val fakeEducator by lazy { FakeEducator(fakerEducator) }
-  
+
     /**
      * Provides a [FakeEmailAddress] making use of [fakeName] to help generate parts of the email address.
      */
